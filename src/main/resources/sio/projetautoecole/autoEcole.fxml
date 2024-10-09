@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="sio.projetautoecole.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox alignment="CENTER" prefHeight="664.0" prefWidth="761.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="sio.projetautoecole.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="666.0" prefWidth="722.0">
+      <children>
+         <Button layoutX="501.0" layoutY="305.0" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="206.0" text="Pour les responsables d'auto-école" />
+          <Button layoutY="305.0" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="206.0" text="Pour les élèves" />
+         <Button layoutX="256.0" layoutY="305.0" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="206.0" text="Pour les moniteurs" />
+         <Label layoutX="299.0" layoutY="60.0" prefHeight="34.0" prefWidth="123.0" text="Se connecter">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="126.0" fitWidth="123.0" layoutX="42.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../../../../Users/esteb/Downloads/535572.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="261.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../../../../Users/esteb/Downloads/professor-icon-png-2.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="504.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../../../../Users/esteb/Downloads/115898.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
 </VBox>
